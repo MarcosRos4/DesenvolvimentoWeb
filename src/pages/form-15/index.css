@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.primeira-div{
+    border: 1px solid;
+    max-width: 400px;
+    
+    width: 100%;
+    font: 100% discordfont3;
+}
+
+.primeira-div > img{
+    width: 100%;
+}
+
+.segunda-div{
+    padding: 15px;
+}
+
+.segunda-div > table{
+    width: 100%;
+    font: 80% discordfont3;   
+}
+
+.segunda-div > table > thead{
+    border: 2px solid;
+    font: 100% discordfont1
+}
+
+.terceira-div{
+    color: rgba(141, 185, 37, 0.74);
+    padding: 5px;
+    border: 2px solid rgba(141, 185, 37, 0.74);
+    border-radius: 5px;
+    font: 100% discordfont3;
+}
+
+.terceira-div > input{
+    display: inline;
+    width: 94%;
+    border: none;
+    outline: 0;
+}
+
+.terceira-div > i{
+    size: 100%;
+}
+
