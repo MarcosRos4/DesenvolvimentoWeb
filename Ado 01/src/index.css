@@ -1,20 +1,36 @@
 
-
 .faixa-1{
     display: flex;
     flex-direction: column;
-    position: relative;
     justify-content: flex-end;
     align-items: center;
     background-color: rgb(64, 78, 237);
-    
+    max-width: 100%;
 }
 
 .nave{
+    padding-top: 2%;
     display: flex;
     align-items: center;
     gap: 200px;
     color: white;    
+    width: 100%;
+}
+
+.discord{
+    font: 16px discordfont1;
+    letter-spacing: 1px;
+}
+
+.open-discord{
+    padding: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font: 90% discordfont2;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
 }
 
 .nave > div {
@@ -24,7 +40,7 @@
 }
 
 .nave > div > a{
-    font: 18px discordfont3; 
+    font: 16px discordfont3; 
 }
 
 .landing-div{
@@ -40,34 +56,44 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     text-align: center;
-    max-width: 40%;
-    color: white;
-    padding-top: 5%;
-    
-    
+    max-width: 45%;
+    color: white;    
 }
 
 .landing > h1{
     max-width: 80%;
-    font: 300% discordfont1;
+    font: 360% discordfont1;
     color: white;
     line-height: 50px;
 }
 
 .landing-texto{
-    line-height: 30px;
-    font: 120% discordfont2;
+    text-align: center;
+    font: 125% discordfont2;
+    line-height: 33px;
+    max-width: 100%;
 }
 
-.landing > div > button{
+.landing-botao{
+    display: flex;
+    gap: 30px;
+}
+
+.landing-botao > a{
     margin-top: 20px;
     padding: 15px;
-    font: 100% discordfont2;
-    color: white;
+    font: 130% discordfont3;
+    color: rgb(255, 255, 255);
     background-color: #23272a;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
+}
+
+.landing-botao > a > svg{
+    position: relative;
+    top: 9%;
 }
 
 .landing-images{
@@ -75,23 +101,26 @@
     align-items: end;
     position: absolute;
     z-index: 0;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .img-esquerda{
     position: relative;
-    left: 25%;
+    left: -4%;
     z-index: 1;
 }
 
 .img-fundo{
     position: relative;
-    left: 0%;
+    
+    left: -53%;
     z-index: 0;
 }
 
 .img-direita{
     position: relative;
-    left: -23.5%;
+    left: -100.8%;
 }
 
 
@@ -182,7 +211,7 @@
 .faixa-5{
     display: flex;
     flex-direction: column;
-
+    background-color: rgb(246, 246, 246);
 }
 
 .faixa-5 > div{
@@ -217,6 +246,7 @@
     flex-direction: column;
     align-items: center;
     padding: 150px;
+    background-color: rgb(246, 246, 246);
 }
 
 .faixa-6 > div{
@@ -230,12 +260,14 @@
     z-index: 1;
 }
 
-.faixa-6 > div > button{
+.faixa-6 > div > a{
     font: 20px discordfont2;
     background-color: rgb(88, 101, 242);
     color: white;
     border-radius: 35px;
-    padding: 15px;
+    padding: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
     border: none;
 }
 
@@ -249,11 +281,129 @@
     background-color: #23272a;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .f7-div1{
+    padding: 50px;
     display: flex;
-    gap: 25px;
+    height: 70%;
+    gap: 7%;
     color: rgb(88, 101, 242);
     font: 15px discordfont2;
+    justify-content: flex-start;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.socials > div{
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+
+.socials > div > img{
+    max-width: 15%;
+}
+
+.socials > div > select {
+    background-color: #23272a;
+    color: white;
+    border-color: #23272a;
+    
+}
+
+.socials > div > select > option{
+    background-color: white;
+    color: black;
+    border-color: #23272a;
+    border-radius: 25px;
+}
+
+
+.info-geral{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 10px;
+    font: 17px discordfont2;
+    
+
+}
+
+.info-geral > a{
+    display: inline;
+    color: white;
+    display: inline;
+}
+
+.info-geral > h5{
+    font: 18px discordfont2;
+}
+
+.f7-div2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.f7-div2 > div{
+    border-top: rgb(88, 101, 242) solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    padding-top: 30px;
+}
+
+.abrir{
+    background-color: rgb(88, 101, 242);
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+    font: 15px discordfont2;
+}
+
+
+/* iphone XR e sansung galaxy S20 Ultra */
+
+@media (max-width: 414px) {
+    
+    body{
+        width: 414px;
+    }
+}
+
+
+/* celulares normais */
+@media (max-width: 390px) {
+    .primeira-div{
+        font-size: 60%;
+    }
+    .terceira-div > input{
+        width: 92%;
+    }
+}
+
+
+/* sansung galaxy fold */
+@media (max-width: 280px) {
+    .primeira-div{
+        font-size: 45%;
+    }
+    .terceira-div > input{
+        width: 90%;
+    }
 }
