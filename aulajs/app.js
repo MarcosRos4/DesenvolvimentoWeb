@@ -1,4 +1,6 @@
 import prompt from 'prompt-sync'
+import { alunos, notas } from './vetores.js'
+import { media, status } from './gerenciadorBoletim.js'
 
 const ler = prompt()
 
@@ -14,10 +16,13 @@ console.log("Qual foi a nota da sua ado?")
 
 let ado = Number(ler())
 
-console.log("A sua média da matéria genérica é: "+media(prova1, prova2, ado))
+console.log("A sua média da matéria genérica é: "+media(prova1, prova2, ado)+"\nSeu Status é: "+status(media(prova1, prova2, ado)))
 
 
-function media(prova1, prova2, ado){
-    let media = (2 * prova1 + 2 * prova2 + ado) / 5
-    return media
+console.log("\nAqui estão as médias e status dos outros alunos:")
+for (let index = 0; index < alunos.length; index++) {
+    console.log(
+    "Aluno "+alunos[index]+
+    " tem média: "+media(notas[index][0], notas[index][1], notas[index][2])+
+    " e está: "+status(media(notas[index][0], notas[index][1], notas[index][2])))
 }
