@@ -1,4 +1,10 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node
+
+Aula Api/node_modules/vary/LICENSE
+*.md
+*.ts
+*.ps1
+*.cmd
+-# Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
 ### Node ###
@@ -140,5 +146,4 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
-
-# End of https://www.toptal.com/developers/gitignore/api/node
+*.env
