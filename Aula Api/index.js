@@ -77,6 +77,14 @@ servidor.get('/retangulo/perimetro', (request, response) => {
 
 })
 
+servidor.get('/triangulo/area', (request, response) => {
+    let base = request.query.base
+    let altura = request.query.altura
+
+    response.send({
+        "area":base*altura/2
+    })
+})
 
 
 
