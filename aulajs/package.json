@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
-  "type":"module",
+  "type": "module",
   "keywords": [],
   "author": "Marcos",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.4.0",
     "prompt-sync": "^4.2.0"
   }
 }
