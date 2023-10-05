@@ -1,10 +1,3 @@
-import 'dotenv/config';
-import express, { request, response } from "express";
-import cors from 'cors';
-
-const servidor = express();
-servidor.use(express.json());
-
 servidor.get('/somar/:n1/:n2', (req, resp) => {
   let n1 = Number(req.params.n1);
   let n2 = Number(req.params.n2);
@@ -87,5 +80,3 @@ servidor.get('/triangulo/area', (request, response) => {
 })
 
 
-
-servidor.listen(process.env.PORT, () => console.log(`API subiu na porta ${process.env.PORT}!`));
